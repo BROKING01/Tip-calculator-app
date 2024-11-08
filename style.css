@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    margin-bottom: 50px;
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    width: 61%;
+    padding: 25px;
+    border-radius: 20px;
+}
+main .left{
+    width: 50%;
+}
+main .left .head{
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+main .left .bill{
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+}
+input::placeholder{
+    text-align: left;
+}
+.bill{
+    margin-bottom: 30px;
+}
+.tip{
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+.tips{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 30.8% 30.8% 30.8%;
+    row-gap: 1.2rem;
+    column-gap: 17px;
+    margin-bottom: 40px;
+}
+.a{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.a:hover{
+    background-color: hsl(172, 39%, 61%);
+    color: hsl(183, 100%, 15%);
+}
+.cus input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: end;
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+}
+.cus input::placeholder{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 10px;
+    color: hsl(183, 100%, 15%);
+}
+.btm{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.btm .error{
+    color: red;
+    font-weight: 700;
+}
+.btm .num{
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+.number{
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+}
+.hidden{
+    display: none;
+}
+.right{
+    width: 45%;
+    padding: 50px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+}
+.right .tip-amount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.right .b1{
+    color: white;
+    font-weight: 700;
+}
+.right .b2{
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+.right .result{
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+.right .total-amount{
+    display: flex;
+    justify-content: space-between;
+}
+.right .reset{
+    margin-top: 90px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.right .reset:hover{
+    background-color: hsl(172, 39%, 61%);
+    color: white;
+}
+@media screen and (max-width:900px) {
+    .right .result{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+    main .left{
+        width: 100%;
+    }
+    main .right{
+        width: 100%;
+    }
+    .tips{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 48% 48%;
+        row-gap: 2rem;
+        column-gap: 20px;
+    }
+    .number{
+        margin-bottom: 20px;
+    }
+    .logo{
+        margin-bottom: -20px;
+        margin-top: 20px;
+    }
+    .logo img{
+        width: 100px;
+    }
+}

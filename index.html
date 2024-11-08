@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.svg" alt="">
+    </div>
+    <main>
+        <div class="left">
+            <p class="head">Bill</p>
+            <input type="text" class="bill" placeholder="" >
+            <p class="tip">Select Tip %</p>
+            <form class="tips">
+                 <div class="a A1">5%</div>           
+                 <div class="a A2">10%</div>           
+                 <div class="a A3">15%</div>           
+                 <div class="a A4">25%</div>
+                 <div class="a A5">50%</div>
+                 <div class="cus">
+                    <input type="number" placeholder="Custom" class="custom">
+                 </div>
+            </form>
+            <div class="btm">
+                <p class="num">Number of People</p>
+                <p class="error hidden">Can't be Zero</p>
+            </div>
+            <input type="text" class="number" placeholder="">
+        </div>
+        <div class="right">
+            <div class="tip-amount">
+                <div class="one">
+                    <p class="b1">Tip Amount</p>
+                    <p class="b2">/ person</p>
+                </div>
+                <div class="result result1">$0.00</div>
+            </div>
+            <div class="total-amount">
+                <div class="two">
+                    <p class="b1">Total</p>
+                    <p class="b2">/ person</p>
+                </div>
+                <div class="result result2">$0.00</div>
+            </div>
+            <button class="reset">RESET</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
